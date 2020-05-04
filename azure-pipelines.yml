@@ -23,7 +23,7 @@ steps:
     npm --version
 - script: |
     cd /tmp &&\
-    wget https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-all.zip &&\
+    curl https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh  &&\
     ls /tmp
 
   displayName: 'npm install and build'
