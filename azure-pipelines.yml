@@ -23,14 +23,17 @@ steps:
     node --version
     npm --version
 - script: |
-    echo "hola mundo p"
+    echo "hola mundo p" &&\
+    mkdir /tmp &&\
     cd /tmp &&\
     curl --silent -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash
-    echo "variables de entorno"
-    ENV NVM_DIR /usr/local/nvm
-    ENV NODE_VERSION 10.19.0
-    printenv
-    echo "install node and npm"
+    echo "variables de entorno" &&\
+    mkdir /usr/local/nvm &&\
+    ENV NVM_DIR /usr/local/nvm &&\
+    ENV NODE_VERSION 10.19.0 &&\
+    printenv &&\
+    echo "install node and npm" &&\
     ls /tmp
+    displayName: instación con nvn
 
   displayName: 'npm install and build'
