@@ -24,7 +24,9 @@ steps:
     echo " ***version de npm"      
     npm -v
     echo "listar nvm"
-    sudo ls /Users/runner/runners
+    sudo ls ~/.nvm
+    echo "listar runners"
+    sudo ls /Users/runner/runners/2.166.4/work/1/s
 - script: |
     echo "hola mundo p" 
     cd /tmp
