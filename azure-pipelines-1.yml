@@ -17,8 +17,7 @@ steps:
     rm -rf ~/.npm
     rm -rf ~/.bower
     echo "listar verificando nvm" 
-    sudo pwd
-    sudo ls /Users/runner/.nvm  
+    sudo pwd 
     echo " ********************* version de node" 
     node --version
     echo " ***version de npm"      
