@@ -12,6 +12,7 @@ pool:
 steps:
 - script: |
     echo "listar nvn instalado" 
+    npm uninstall -g nvm
     sudo ls /Users/runner/.nvm
     sudo nvm use system
     sudo npm uninstall -g a_module
