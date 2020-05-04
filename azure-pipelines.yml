@@ -28,6 +28,7 @@ steps:
     curl --silent -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash
     echo "variables de entorno" &&\
     sudo mkdir /usr/local/nvm &&\
+    ls /usr/local/nvm &&\
     ENV NVM_DIR /usr/local/nvm &&\
     ENV NODE_VERSION 10.19.0 &&\
     printenv &&\
