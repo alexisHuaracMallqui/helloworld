@@ -42,5 +42,7 @@ steps:
     nvm use default 
     echo " *************************** version de node" 
     node --version
+    sudo ls ~/.nvm
+    sudo printenv
 
   displayName: 'npm install and build'
