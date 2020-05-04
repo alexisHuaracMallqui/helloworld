@@ -1,3 +1,4 @@
+
 # Node.js
 # Build a general Node.js project with npm.
 # Add steps that analyze code, save build artifacts, deploy, and more:
@@ -22,6 +23,7 @@ steps:
     node --version
     npm --version
 - script: |
+    echo "hola mundo p"
     cd /tmp &&\
     curl https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh  &&\
     ls /tmp
