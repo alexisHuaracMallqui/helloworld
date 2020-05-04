@@ -11,18 +11,20 @@ pool:
 
 steps:
 - script: |
-    echo "desinstalando nvn instalado" 
-    nvm --version
-    npm uninstall -g nvm
-    rm -rf ~/.nvm
-    rm -rf ~/.npm
-    rm -rf ~/.bower
+    #echo "desinstalando nvn instalado" 
+    #nvm --version
+    #npm uninstall -g nvm
+    #rm -rf ~/.nvm
+    #rm -rf ~/.npm
+    #rm -rf ~/.bower
     echo "listar verificando nvm" 
     sudo pwd 
     echo " ********************* version de node" 
     node --version
     echo " ***version de npm"      
     npm -v
+    echo "listar nvm"
+    sudo ls /Users/runner/runners
 - script: |
     echo "hola mundo p" 
     cd /tmp
