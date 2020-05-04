@@ -19,4 +19,4 @@ steps:
     node --version
     npm install
     npm run build
-  displayName: 'npm install'
+  displayName: 'npm install build'
