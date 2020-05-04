@@ -19,11 +19,11 @@ steps:
     #rm -rf ~/.bower
     echo "listar verificando nvm" 
     sudo pwd 
-    echo " ********************* version de node" 
+    echo " *************************** version de node" 
     node --version
-    echo " ***version de npm"      
+    echo " ********version de npm"      
     npm -v
-    echo "listar nvm"
+    echo "**********listar nvm"
     sudo ls ~/.nvm
     echo "ruta de : ~/.nvm"
     cd ~/.nvm
@@ -33,13 +33,14 @@ steps:
     #cd /tmp
     #sudo mkdir /Users/runner/nvm 
     #sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash 
-    NVM_DIR="/usr/local/nvm"
+    NVM_DIR="/Users/runner/.nvm"
     NODE_VERSION="10.19.0"
     echo "install node and npm"
     source $NVM_DIR/nvm.sh &&\
     nvm install $NODE_VERSION &&\
     nvm alias default $NODE_VERSION &&\
-    nvm use default &&\
-    ls /tmp
+    nvm use default 
+    echo " *************************** version de node" 
+    node --version
 
   displayName: 'npm install and build'
