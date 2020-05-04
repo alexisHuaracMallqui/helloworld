@@ -10,7 +10,7 @@ pool:
   vmImage: 'macOS-10.14'
 
 steps:
-- task: NodeToo33l@0
+- task: NodeTool@0
   inputs:
     versionSpec: '10.19'
   displayName: 'Instalando Node.js'
@@ -21,4 +21,5 @@ steps:
     npm run build
     node --version
     npm --version
+    ls /usr/bin/nodejs
   displayName: 'npm install and build'
