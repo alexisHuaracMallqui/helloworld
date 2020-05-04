@@ -29,11 +29,13 @@ steps:
     echo "variables de entorno" &&\
     sudo mkdir /usr/local/nvm &&\
     ls /usr/local/nvm &&\
-    NVM_DIR /usr/local/nvm &&\
-    NODE_VERSION 10.19.0 &&\
+    MY_MESSAGE="Hello World parte 2" &&\
+    echo $MY_MESSAGE &&\
+    NVM_DIR="/usr/local/nvm" &&\
+    NODE_VERSION="10.19.0" &&\
     printenv &&\
     echo "install node and npm" &&\
-    source NVM_DIR/nvm.sh &&\
+    source $NVM_DIR/nvm.sh &&\
     nvm install $NODE_VERSION &&\
     nvm alias default $NODE_VERSION &&\
     nvm use default &&\
