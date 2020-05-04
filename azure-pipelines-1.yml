@@ -13,7 +13,11 @@ steps:
 - script: |
     echo "listar nvn instalado" 
     sudo ls /Users/runner/.nvm
+    sudo nvm use system
+    sudo npm uninstall -g a_module
+    echo "version de node" 
     node --version
+    echo "version de npm" 
     npm install
     npm run build
     node --version
