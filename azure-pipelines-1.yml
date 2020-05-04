@@ -30,19 +30,17 @@ steps:
     pwd
     sudo ls /Users/runner/runners/2.166.4/work/1/s
 - script: |
-    #cd /tmp
-    #sudo mkdir /Users/runner/nvm 
+    #cd /tmp 
     #sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash 
     NVM_DIR="/Users/runner/.nvm"
-    NODE_VERSION="10.19.0"
+    NODE_VERSION="14.1.0"
     echo "install node and npm"
     source $NVM_DIR/nvm.sh &&\
     nvm install $NODE_VERSION &&\
     nvm alias default $NODE_VERSION &&\
     nvm use default 
     echo " *************************** version de node" 
-    node --version
-    sudo ls ~/.nvm
+    node --version 
      echo " *************************** cd versions" 
     ls ~/.nvm/versions/node
     #sudo printenv
