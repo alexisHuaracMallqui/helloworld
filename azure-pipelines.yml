@@ -23,15 +23,17 @@ steps:
     node --version
     npm --version
 - script: |
-    echo "hola mundo p" &&\ 
-    cd /tmp &&\    
-    sudo mkdir /usr/local/nvm &&\
-    curl --silent -o /usr/local/nvm https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash &&\
-    echo "listando" &&\ 
-    ls /usr/local/nvm &&\
-    echo "variables de entorno" &&\    
-    MY_MESSAGE="Hello World parte 2" &&\
-    echo $MY_MESSAGE &&\
+    echo "hola mundo p" 
+    cd /tmp   
+    sudo mkdir /usr/local/nvm 
+    echo "curl" 
+    curl --silent -o /usr/local/nvm https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash 
+    echo "listando" 
+    sudo touch /usr/local/nvm/prueba.txt
+    ls /usr/local/nvm 
+    echo "variables de entorno"    
+    MY_MESSAGE="Hello World parte 2" 
+    echo $MY_MESSAGE 
     NVM_DIR="/usr/local/nvm" &&\
     NODE_VERSION="10.19.0" &&\ 
     echo "install node and npm" &&\
