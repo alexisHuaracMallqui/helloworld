@@ -13,11 +13,12 @@ steps:
 - task: NodeTool@0
   inputs:
     versionSpec: '10.19'
-  displayName: 'Install Node.js'
+  displayName: 'Instalando Node.js'
 
 - script: |
     node --version
     npm install
     npm run build
     node --version
+    npm --version
   displayName: 'npm install and build'
