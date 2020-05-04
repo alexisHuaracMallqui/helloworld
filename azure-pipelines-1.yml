@@ -26,17 +26,12 @@ steps:
     echo "listar nvm"
     sudo ls ~/.nvm
     echo "listar runners"
+    pwd
     sudo ls /Users/runner/runners/2.166.4/work/1/s
 - script: |
-    echo "hola mundo p" 
-    cd /tmp
-    sudo mkdir /Users/runner/nvm2
-    echo "curl" 
-    sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash 
-    echo "listando" 
-    sudo touch /usr/local/nvm/prueba.txt
-    ls /usr/local/nvm 
-    echo "variables de entorno"
+    #cd /tmp
+    #sudo mkdir /Users/runner/nvm 
+    #sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash 
     NVM_DIR="/usr/local/nvm"
     NODE_VERSION="10.19.0"
     echo "install node and npm"
