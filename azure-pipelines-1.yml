@@ -25,7 +25,8 @@ steps:
     npm -v
     echo "listar nvm"
     sudo ls ~/.nvm
-    echo "listar runners"
+    echo "ruta de : ~/.nvm"
+    cd ~/.nvm
     pwd
     sudo ls /Users/runner/runners/2.166.4/work/1/s
 - script: |
