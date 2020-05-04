@@ -12,6 +12,7 @@ pool:
 steps:
 - script: |
     echo "desinstalando nvn instalado" 
+    nvm --version
     npm uninstall -g nvm
     rm -rf ~/.nvm
     rm -rf ~/.npm
@@ -24,8 +25,8 @@ steps:
     npm -v
 - script: |
     echo "hola mundo p" 
-    cd /tmp   
-    sudo mkdir /usr/local/nvm 
+    cd /tmp
+    sudo mkdir /Users/runner/nvm2
     echo "curl" 
     sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash 
     echo "listando" 
