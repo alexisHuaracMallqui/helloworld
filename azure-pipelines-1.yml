@@ -43,6 +43,7 @@ steps:
     echo " *************************** version de node" 
     node --version
     sudo ls ~/.nvm
-    sudo printenv
+    cd ~/.nvm/versions
+    #sudo printenv
 
   displayName: 'npm install and build'
