@@ -10,7 +10,7 @@ pool:
   vmImage: 'macOS-10.14'
 
 steps:
-- task: NodeTool@0
+- task: NodeToo33l@0
   inputs:
     versionSpec: '10.19'
   displayName: 'Instalando Node.js'
