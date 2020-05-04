@@ -13,7 +13,7 @@ pool:
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '10.19'
+    versionSpec: '8'
   displayName: 'Instalando Node.js'
 
 - script: |
@@ -29,10 +29,14 @@ steps:
     echo "variables de entorno" &&\
     sudo mkdir /usr/local/nvm &&\
     ls /usr/local/nvm &&\
-    ENV NVM_DIR /usr/local/nvm &&\
-    ENV NODE_VERSION 10.19.0 &&\
+    NVM_DIR /usr/local/nvm &&\
+    NODE_VERSION 10.19.0 &&\
     printenv &&\
     echo "install node and npm" &&\
+    source NVM_DIR/nvm.sh &&\
+    nvm install $NODE_VERSION &&\
+    nvm alias default $NODE_VERSION &&\
+    nvm use default &&\
     ls /tmp
     displayName: instación con nvn
 
