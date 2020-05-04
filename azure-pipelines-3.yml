@@ -12,3 +12,4 @@ pool:
 steps:
 - script: |
     node --version
+    printenv
