@@ -21,5 +21,9 @@ steps:
     npm run build
     node --version
     npm --version
-    ls /usr/bin/nodejs
+- script: |
+    cd /tmp &&\
+    wget https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-all.zip &&\
+    ls /tmp
+
   displayName: 'npm install and build'
