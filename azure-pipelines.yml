@@ -27,7 +27,7 @@ steps:
     cd /tmp   
     sudo mkdir /usr/local/nvm 
     echo "curl" 
-    sudo curl -o /usr/local/nvm https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash 
+    sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash 
     echo "listando" 
     sudo touch /usr/local/nvm/prueba.txt
     ls /usr/local/nvm 
