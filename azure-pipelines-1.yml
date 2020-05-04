@@ -11,6 +11,8 @@ pool:
 
 steps:
 - script: |
+    echo "listar nvn instalado" 
+    sudo ls /Users/runner/.nvm
     node --version
     npm install
     npm run build
