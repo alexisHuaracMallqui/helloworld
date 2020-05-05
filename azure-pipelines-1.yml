@@ -36,9 +36,9 @@ steps:
     NODE_VERSION="14.1.0"
     echo "*******************install node and npm"
     #source $NVM_DIR/nvm.sh &&\
-    nvm install v$NODE_VERSION 
-    nvm alias default $NODE_VERSION 
-    nvm use default 
+    $NVM_DIR/nvm.sh install v$NODE_VERSION 
+    $NVM_DIR/nvm.sh alias default $NODE_VERSION 
+    $NVM_DIR/nvm.sh use default 
     echo " *************************** version de node" 
     node --version 
      echo " *************************** cd versions" 
