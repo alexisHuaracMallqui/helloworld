@@ -41,7 +41,7 @@ steps:
     $NVM_DIR/nvm.sh use default 
     echo " *************************** version de node" 
     node --version 
-     echo " *************************** cd versions" 
+    echo " *************************** cd versions" 
     ls ~/.nvm/versions/node
     #sudo printenv
 
