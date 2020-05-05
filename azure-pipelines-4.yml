@@ -11,19 +11,6 @@ pool:
 
 steps:
 - script: |
-    #cd /tmp 
-    #sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash 
-    NVM_DIR="/Users/runner/.nvm"
-    NODE_VERSION="14.1.0"
-    echo "*******************install node and npm"
-    #source $NVM_DIR/nvm.sh &&\
-    $NVM_DIR/nvm.sh install v$NODE_VERSION 
-    $NVM_DIR/nvm.sh alias default $NODE_VERSION 
-    $NVM_DIR/nvm.sh use default 
-    echo " *************************** version de node" 
-    node --version 
-    echo " *************************** cd versions" 
-    ls ~/.nvm/versions/node
-    #sudo printenv
-
-  displayName: 'npm install and build'
+    echo "hola mundo p" &&\ 
+    
+    displayName: instación con nvn
