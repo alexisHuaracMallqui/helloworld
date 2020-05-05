@@ -11,6 +11,7 @@ pool:
 
 steps:
 - script: |
-    echo "hola mundo p" &&\ 
+    echo "hola mundo p" &&\
+    nvm --version
     
     displayName: instación con nvn
